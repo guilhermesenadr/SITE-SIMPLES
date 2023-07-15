@@ -32,6 +32,20 @@ header{
 body{
     height: 100vh;
 }
+i#burguer{
+    background-color: yellow;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+i#burguer:hover{
+    background-color: var(--cor0);
+    color: var(--cor4);
+}
+header > menu{
+    display: none;
+}
 
 header h1{
     font-family: var(--fonte-padrao);
