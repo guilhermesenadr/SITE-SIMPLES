@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./ESTILO/style.css">
 </head>
-<body>
-    <header>
+<body class="light-theme">
+    <header class="light-theme">
         <h1>Meu Site </h1>
         <p>Responsivo com Menu Hamburgur e dark and light</p>
+        <div>
+            <button class="btn">Dark</button>
+        </div>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
         <menu id="itens">
             <ul>
@@ -31,11 +34,21 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi minus veniam autem quod et tempore repellendus quo. Distinctio, corrupti. Sunt eius et corrupti asperiores repudiandae consectetur libero officia earum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quas voluptatem nulla omnis totam porro nam, blanditiis expedita itaque cupiditate sequi mollitia vel, voluptas magnam, harum voluptatibus sit! Quia, eos.</p>
 
     </main>
-    <footer>
+    <footer class="light-theme">
         <h2>site de demonstração de tecnica de menu hamburguer e mobile first e javascript</h2>
         <p>Neste site foi utilizado html, css e javascript</p>
         
     </footer>
-    <script src="./JS/aparece.js"></script>
+    <script>
+        function clickMenu() {
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    }else {
+    itens.style.display = 'block'
+}
+}
+    </script>
+    <script src="JS/aparece.js"></script>
+    <noscript>you need to enable javascript to view to all site</noscript>
 </body>
 </html>
